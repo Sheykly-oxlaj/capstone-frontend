@@ -11,6 +11,10 @@
     <router-link to="/logout">Logout</router-link>
     |
     <router-link to="/journals">All my Journals</router-link>
+    |
+    <router-link to="/journals/:id">One journal</router-link>
+    |
+    <router-link to="/journals">New journal</router-link>
   </nav>
   <router-view />
 </template>

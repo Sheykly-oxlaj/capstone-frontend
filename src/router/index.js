@@ -4,7 +4,8 @@ import SignupView from "../views/SignupView.vue";
 import LoginView from "../views/LoginView.vue";
 import LogoutView from "../views/LogoutView.vue";
 import JournalsIndex from "../views/LogoutView.vue";
-
+import JournalsShow from "../views/JournalsShow.vue";
+import JournalsNew from "../views/JournalsNew.vue";
 const routes = [
   {
     path: "/",
@@ -36,8 +37,18 @@ const routes = [
   },
   {
     path: "/journals",
-    name: "index",
+    name: "journals",
     component: JournalsIndex,
+  },
+  {
+    path: "/journals/:id",
+    name: "journals-show",
+    component: JournalsShow,
+  },
+  {
+    path: "/journals/:id",
+    name: "journals-new",
+    component: JournalsShow,
   },
 ];
 
