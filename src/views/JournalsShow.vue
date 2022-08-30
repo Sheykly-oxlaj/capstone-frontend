@@ -29,7 +29,7 @@ export default {
       <h1>{{ journal.name }}</h1>
       <router-link to="/journals">Return to All Journals</router-link>
       |
-      <router-link v-bind:to="`/journals/${journal.id}/edit`">Add Journal Entry</router-link>
+      <router-link v-bind:to="`/journal-entries`">Add Journal Entry</router-link>
       <div>
         <!-- uses v-bind since the links have dynamic attributes… -->
         <button v-on:click="destroyJournal()">Delete this Journal</button>
