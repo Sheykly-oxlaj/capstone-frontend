@@ -26,8 +26,10 @@ export default {
     <h1>{{ message }}</h1>
     <div v-for="journal in journals" v-bind:key="journal.id">
       <router-link :to="`/journals/${journal.id}`">
-        <h2>{{ journal.name }}</h2>
+        <h2>{{ journal.title }}</h2>
       </router-link>
+      <img v-bind:src="journal.image" v-bind:alt="journal.name" />
+      <p>{{ journal.body }}</p>
     </div>
   </div>
 </template>

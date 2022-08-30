@@ -7,6 +7,7 @@ import JournalsIndex from "../views/LogoutView.vue";
 import JournalsShow from "../views/JournalsShow.vue";
 import JournalsNew from "../views/JournalsNew.vue";
 import JournalEntriesShow from "../views/JournalEntriesShow.vue";
+import JournalEntriesNew from "../views/JournalEntriesNew.vue";
 const routes = [
   {
     path: "/",
@@ -55,6 +56,11 @@ const routes = [
     path: "/journal-entries/:id",
     name: "journal_entry-show",
     component: JournalEntriesShow,
+  },
+  {
+    path: "/journal-entries",
+    name: "journal_entry-new",
+    component: JournalEntriesNew,
   },
 ];
 
