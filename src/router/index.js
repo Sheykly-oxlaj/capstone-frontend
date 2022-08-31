@@ -45,7 +45,7 @@ const routes = [
     component: JournalsNew,
   },
   {
-    path: "/journal-entries/:id",
+    path: "/journals/:id/journal-entries/:title",
     name: "journal_entry-show",
     component: JournalEntriesShow,
   },

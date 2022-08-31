@@ -26,7 +26,9 @@ export default {
 <template>
   <div class="journals-show">
     <div v-for="journal_entry in journal" v-bind:key="journal_entry.id">
-      <router-link :to="`/journal-entries/${journal_entry.id}`">{{ journal_entry.title }}</router-link>
+      <router-link :to="`/journals/${this.$route.params.id}/journal-entries/${journal_entry.title}`">
+        {{ journal_entry.title }}
+      </router-link>
       <p>{{ journal_entry.text }}</p>
       <!-- would like to add a created at -->
     </div>

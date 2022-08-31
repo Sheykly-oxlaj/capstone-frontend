@@ -8,9 +8,11 @@ export default {
     };
   },
   created: function () {
-    axios.get("/journal-entries/" + this.$route.params.id + ".json").then((response) => {
-      this.journalEntry = response.data;
-    });
+    axios
+      .get("/journals/" + this.$route.params.id + "/journal-entries/" + this.$route.params.title)
+      .then((response) => {
+        this.journalEntry = response.data;
+      });
   },
   methods: {
     destroyJournalEntry: function () {
