@@ -30,9 +30,12 @@ export default {
       <p>{{ journal_entry.text }}</p>
       <!-- would like to add a created at -->
     </div>
-    <router-link to="/journals">Return to All Journals</router-link>
+    <!-- <router-link to="/journals">Return to All Journals</router-link>
     |
-    <router-link v-bind:to="`/journal-entries`">Add Journal Entry</router-link>
+    <router-link v-bind:to="`/journal-entries`">Add Journal Entry</router-link> -->
+    <button @click="$router.push('/journals')">Return to All Journals</button>
+    |
+    <button @click="$router.push('/journal-entries')">Add Journal Entry</button>
     <div>
       <!-- uses v-bind since the links have dynamic attributes… -->
       <!-- <button v-on:click="destroyJournal()">Delete this Journal</button> -->
