@@ -28,6 +28,8 @@ export default {
     <div class="container">
       <h2>{{ journalEntry.title }}</h2>
       <p>{{ journalEntry.text }}</p>
+      <router-link :to="`/journals/${journalEntry.journal_id}`">Back</router-link>
+      |
 
       <router-link to="/journals">Return to All Journals</router-link>
       <div>
