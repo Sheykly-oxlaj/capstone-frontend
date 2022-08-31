@@ -3,7 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import SignupView from "../views/SignupView.vue";
 import LoginView from "../views/LoginView.vue";
 import LogoutView from "../views/LogoutView.vue";
-import JournalsIndex from "../views/LogoutView.vue";
+import JournalsIndex from "../views/JournalsIndex.vue";
 import JournalsShow from "../views/JournalsShow.vue";
 import JournalsNew from "../views/JournalsNew.vue";
 import JournalEntriesShow from "../views/JournalEntriesShow.vue";

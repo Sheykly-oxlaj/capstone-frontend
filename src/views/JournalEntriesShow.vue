@@ -4,19 +4,19 @@ import axios from "axios";
 export default {
   data: function () {
     return {
-      journal: {},
+      journalEntry: {},
     };
   },
   created: function () {
-    axios.get("/journals/" + this.$route.params.id + ".json").then((response) => {
-      this.journal = response.data;
+    axios.get("/journal-entries/" + this.$route.params.id + ".json").then((response) => {
+      this.journalEntry = response.data;
     });
   },
   methods: {
-    destroyJournal: function () {
-      axios.delete("/journals/" + this.$route.params.id + ".json").then((response) => {
+    destroyJournalEntry: function () {
+      axios.delete("/journal-entries/" + this.$route.params.id + ".json").then((response) => {
         console.log("IT GONE!", response.data);
-        this.$router.push("/journals");
+        this.$router.push("/journal-entries");
       });
     },
   },
@@ -24,15 +24,15 @@ export default {
 </script>
 
 <template>
-  <div class="journals-show">
+  <div class="journal_entry-show">
     <div class="container">
       <h1>{{ journal.name }}</h1>
       <router-link to="/journals">Return to All Journals</router-link>
       |
-      <router-link v-bind:to="`/journals/${journal.id}/edit`">Add Journal Entry</router-link>
+      <router-link v-bind:to="`/journal-entries`">Add Journal Entry</router-link>
       <div>
         <!-- uses v-bind since the links have dynamic attributes… -->
-        <button v-on:click="destroyJournal()">Delete this Journal</button>
+        <button v-on:click="destroyJournalEntry()">Delete this Journal Entry</button>
       </div>
     </div>
   </div>

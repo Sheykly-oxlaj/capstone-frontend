@@ -9,10 +9,10 @@
     <router-link to="/logout">Logout</router-link>
     |
     <router-link to="/journals">All my Journals</router-link>
+    <!-- |
+    <router-link to="/journals/:id">One journal</router-link> -->
     |
-    <router-link to="/journals/:id">One journal</router-link>
-    |
-    <router-link to="/journals">New journal</router-link>
+    <router-link to="/journals/new">New journal</router-link>
     |
     <router-link to="/journal-entries/:id">Entry</router-link>
   </nav>

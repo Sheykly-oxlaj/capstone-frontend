@@ -22,7 +22,7 @@ export default {
 </script>
 
 <template>
-  <div class="home">
+  <div class="journals">
     <h1>{{ message }}</h1>
     <div v-for="journal in journals" v-bind:key="journal.id">
       <router-link :to="`/journals/${journal.id}`">
