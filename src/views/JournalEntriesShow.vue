@@ -26,10 +26,10 @@ export default {
 <template>
   <div class="journal_entry-show">
     <div class="container">
-      <h1>{{ journal.name }}</h1>
+      <h2>{{ journalEntry.title }}</h2>
+      <p>{{ journalEntry.text }}</p>
+
       <router-link to="/journals">Return to All Journals</router-link>
-      |
-      <router-link v-bind:to="`/journal-entries`">Add Journal Entry</router-link>
       <div>
         <!-- uses v-bind since the links have dynamic attributes… -->
         <button v-on:click="destroyJournalEntry()">Delete this Journal Entry</button>

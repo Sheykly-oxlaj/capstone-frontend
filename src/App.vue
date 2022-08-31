@@ -11,10 +11,12 @@
     <router-link to="/journals">All my Journals</router-link>
     <!-- |
     <router-link to="/journals/:id">One journal</router-link> -->
-    |
-    <router-link to="/journals/new">New journal</router-link>
-    |
-    <router-link to="/journal-entries/:id">Entry</router-link>
+    <!-- |
+    <router-link to="/journals/new">New journal</router-link> -->
+    <!-- Displayed in all my journals -->
+    <!-- |
+    <router-link to="/journal-entries/:id">Entry</router-link> -->
+    <!-- displayed in journalsIndex/JournalsShow/ -->
   </nav>
   <router-view />
 </template>

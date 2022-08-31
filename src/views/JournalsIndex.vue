@@ -29,6 +29,8 @@ export default {
         <h2>{{ journal.name }}</h2>
       </router-link>
     </div>
+    <!-- <router-link v-bind:to="`/journals/new`">New Journal</router-link> -->
+    <button @click="$router.push('/journals/new')">New Journal</button>
   </div>
 </template>
 

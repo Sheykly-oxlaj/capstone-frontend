@@ -25,15 +25,17 @@ export default {
 
 <template>
   <div class="journals-show">
-    <div class="container">
-      <h1>{{ journal.name }}</h1>
-      <router-link to="/journals">Return to All Journals</router-link>
-      |
-      <router-link v-bind:to="`/journal-entries`">Add Journal Entry</router-link>
-      <div>
-        <!-- uses v-bind since the links have dynamic attributes… -->
-        <button v-on:click="destroyJournal()">Delete this Journal</button>
-      </div>
+    <div v-for="journal_entry in journal" v-bind:key="journal_entry.id">
+      <router-link :to="`/journal-entries/${journal_entry.id}`">{{ journal_entry.title }}</router-link>
+      <p>{{ journal_entry.text }}</p>
+      <!-- would like to add a created at -->
+    </div>
+    <router-link to="/journals">Return to All Journals</router-link>
+    |
+    <router-link v-bind:to="`/journal-entries`">Add Journal Entry</router-link>
+    <div>
+      <!-- uses v-bind since the links have dynamic attributes… -->
+      <button v-on:click="destroyJournal()">Delete this Journal</button>
     </div>
   </div>
 </template>
