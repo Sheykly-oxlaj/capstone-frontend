@@ -32,7 +32,7 @@ export default {
       <router-link to="/journals">Return to All Journals</router-link>
       <div>
         <!-- uses v-bind since the links have dynamic attributes… -->
-        <button v-on:click="destroyJournalEntry()">Delete this Journal Entry</button>
+        <!-- <button v-on:click="destroyJournalEntry()">Delete this Journal Entry</button> -->
       </div>
     </div>
   </div>

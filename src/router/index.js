@@ -50,7 +50,7 @@ const routes = [
     component: JournalEntriesShow,
   },
   {
-    path: "/journal-entries",
+    path: "/journals/:id/journal-entries",
     name: "journal_entry-new",
     component: JournalEntriesNew,
   },

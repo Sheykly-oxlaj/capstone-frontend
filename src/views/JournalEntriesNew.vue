@@ -3,18 +3,19 @@ import axios from "axios";
 export default {
   data: function () {
     return {
-      newJournalEntryParams: {},
+      newJournalEntryParams: { journal_id: this.$route.params.id },
       errors: [],
+      message: "Entry added succesfully",
     };
   },
   created: function () {},
   methods: {
     createJournalEntry: function () {
       axios
-        .journalEntry("/journal-entries", this.newJournalEntryParams)
+        .post("/journals/:id/journal-entries", this.newJournalEntryParams)
         .then((response) => {
           console.log("journals create", response);
-          this.$router.push("/journal-entries");
+          this.$router.push(`/journals/${this.$route.params.id}`);
           // unsure this is the way it is, might be "/journal-entries"
         })
         .catch((error) => {

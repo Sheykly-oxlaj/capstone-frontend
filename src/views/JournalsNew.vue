@@ -11,7 +11,7 @@ export default {
   methods: {
     createJournal: function () {
       axios
-        .journal("/journals", this.newJournalParams)
+        .post("/journals", this.newJournalParams)
         .then((response) => {
           console.log("journals create", response);
           this.$router.push("/journals");

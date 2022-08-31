@@ -35,7 +35,7 @@ export default {
     <router-link v-bind:to="`/journal-entries`">Add Journal Entry</router-link> -->
     <button @click="$router.push('/journals')">Return to All Journals</button>
     |
-    <button @click="$router.push('/journal-entries')">Add Journal Entry</button>
+    <button @click="$router.push(`/journals/${this.$route.params.id}/journal-entries`)">Add Journal Entry</button>
     <div>
       <!-- uses v-bind since the links have dynamic attributes… -->
       <!-- <button v-on:click="destroyJournal()">Delete this Journal</button> -->
