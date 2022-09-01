@@ -28,6 +28,7 @@ export default {
       <router-link :to="`/journals/${journal.id}`">
         <h2>{{ journal.name }}</h2>
       </router-link>
+      <p>{{ journal.description }}</p>
     </div>
     <!-- <router-link v-bind:to="`/journals/new`">New Journal</router-link> -->
     <button @click="$router.push('/journals/new')">New Journal</button>

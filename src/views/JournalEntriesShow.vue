@@ -10,6 +10,7 @@ export default {
   created: function () {
     axios
       .get("/journals/" + this.$route.params.id + "/journal-entries/" + this.$route.params.title)
+      // why?
       .then((response) => {
         this.journalEntry = response.data;
       });
