@@ -28,9 +28,9 @@
               |
               <a href="/login">Login</a>
               |
-              <a href="/logout">Logout</a>
-              |
               <a href="/journals">All my Journals</a>
+              |
+              <a href="/logout">Logout</a>
             </p>
           </nav>
         </div>
