@@ -43,6 +43,7 @@
         <p>A PLACE TO RECORD MY THOUGHTS</p>
       </div>
     </section>
+
     <!-- Features -->
     <section id="features">
       <div class="container">
@@ -94,10 +95,87 @@
           </div>
           <div class="col-12">
             <ul class="actions">
-              <li><a href="#" class="button icon solid fa-file">Tell Me More</a></li>
+              <li><a href="/login" class="button icon solid fa-file">Get Started</a></li>
             </ul>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="container">
+        <header>
+          <h2>
+            Questions or comments?
+            <strong>Get in touch:</strong>
+          </h2>
+        </header>
+        <div class="row">
+          <div class="col-6 col-12-medium">
+            <section>
+              <form method="post" action="#">
+                <div class="row gtr-50">
+                  <div class="col-6 col-12-small">
+                    <input name="name" placeholder="Name" type="text" />
+                  </div>
+                  <div class="col-6 col-12-small">
+                    <input name="email" placeholder="Email" type="text" />
+                  </div>
+                  <div class="col-12">
+                    <textarea name="message" placeholder="Message"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <a href="#" class="form-button-submit button icon solid fa-envelope">Send Message</a>
+                  </div>
+                </div>
+              </form>
+            </section>
+          </div>
+          <div class="col-6 col-12-medium">
+            <section>
+              <p>
+                Please feel free to contact us with any comments or concerns. Your feedback is highly appreciated as we
+                work on improving this website to offer you a better experience.
+              </p>
+              <div class="row">
+                <div class="col-6 col-12-small">
+                  <ul class="icons">
+                    <li class="icon solid fa-home">
+                      Los Angeles, CA 9004
+                      <br />
+                      USA
+                      <br />
+                    </li>
+                    <li class="icon solid fa-phone">(000) 000-0000</li>
+                    <li class="icon solid fa-envelope">
+                      <a href="#">formebymeinfo@example.com</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6 col-12-small">
+                  <ul class="icons">
+                    <li class="icon brands fa-twitter">
+                      <a href="#">@ForMebyMe</a>
+                    </li>
+                    <li class="icon brands fa-instagram">
+                      <a href="#">instagram.com/ForMebyMe</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div id="copyright" class="container">
+        <ul class="links">
+          <li>&copy; ForMebyMe. All rights reserved.</li>
+          <li>
+            Design:
+            <a href="http://html5up.net">HTML5 UP</a>
+          </li>
+        </ul>
       </div>
     </section>
   </body>
