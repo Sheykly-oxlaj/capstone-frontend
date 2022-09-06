@@ -55,51 +55,6 @@ export default {
           <div class="row">
             <!-- Sidebar -->
             <div id="sidebar" class="col-4 col-12-medium">
-              <!-- Excerpts -->
-              <section>
-                <ul class="divided">
-                  <li>
-                    <!-- Excerpt -->
-                    <article class="box excerpt">
-                      <header>
-                        <span class="date">July 30</span>
-                        <h3><a href="#">Just another post</a></h3>
-                      </header>
-                      <p>
-                        Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est suscipit convallis non id
-                        orci lorem ipsum sed magna consequat feugiat lorem dolore.
-                      </p>
-                    </article>
-                  </li>
-                  <li>
-                    <!-- Excerpt -->
-                    <article class="box excerpt">
-                      <header>
-                        <span class="date">July 28</span>
-                        <h3><a href="#">And another post</a></h3>
-                      </header>
-                      <p>
-                        Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est suscipit convallis non id
-                        orci lorem ipsum sed magna consequat feugiat lorem dolore.
-                      </p>
-                    </article>
-                  </li>
-                  <li>
-                    <!-- Excerpt -->
-                    <article class="box excerpt">
-                      <header>
-                        <span class="date">July 24</span>
-                        <h3><a href="#">One more post</a></h3>
-                      </header>
-                      <p>
-                        Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est suscipit convallis non id
-                        orci lorem ipsum sed magna consequat feugiat lorem dolore.
-                      </p>
-                    </article>
-                  </li>
-                </ul>
-              </section>
-
               <!-- Highlights -->
               <section>
                 <ul class="divided">
