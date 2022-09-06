@@ -9,64 +9,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-  <body class="no-sidebar is-preload">
-    <!-- Main -->
-    <section id="main">
-      <div class="container">
-        <div id="content">
-          <!-- Post -->
-          <article class="box post">
-            <header>
-              <h3>About Us</h3>
-            </header>
+  <body>
+    <div id="page-wrapper">
+      <!-- Header -->
+      <section id="header">
+        <div class="container">
+          <!-- Logo -->
+          <h1 id="logo">
+            <router-link to="/login">FOR ME | BY ME</router-link>
+          </h1>
 
-            <p>What we think of when we think of journaling</p>
+          <!-- Nav -->
+          <nav id="nav">
+            <h1></h1>
+
             <p>
-              Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id justo
-              mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris sit
-              amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada in, tristique Curabitur leo nibh,
-              rutrum eu malesuada in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat magna
-              tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros consequat magna tempus
+              <a href="/">Home</a>
+              |
+              <a href="/login">Login</a>
+              |
+              <a href="/logout">Logout</a>
+              |
+              <a href="/journals">All my Journals</a>
             </p>
-            <p>
-              Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet mollis
-              tortor congue. Sed quis mauris sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-              in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat consequat magna tempus lorem
-              ipsum consequat Phasellus laoreet massa id in, tristique at erat lorem ipsum dolor sit amet lorem ipsum
-              sed consequat magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros consequat magna tempus
-              lorem ipsum consequat Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit ligula vel quam
-              viverra sit amet mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique. Curabitur leo
-              nibh, rutrum eu malesuada in tristique
-            </p>
-            <h3>Benefits of Journaling</h3>
-            <p>
-              Consequat Phasellus laoreet massa id in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed
-              consequat magna tempus veroeros consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-              justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet mollis tortor congue. Sed quis
-              mauris sit amet magna.
-            </p>
-            <p>
-              Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet mollis
-              tortor congue. Sed quis mauris sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-              in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat consequat magna tempus lorem
-              ipsum consequat Phasellus laoreet massa id in, tristique at erat lorem ipsum dolor sit amet lorem ipsum
-              sed consequat magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros consequat magna tempus
-              lorem ipsum consequat Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit ligula vel quam
-              viverra sit amet mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique. Curabitur leo
-              nibh, rutrum eu malesuada in tristique
-            </p>
-            <h3>Give it a try!</h3>
-            <p>Here, you can create as many journals as you would like...</p>
-            <p>
-              Sed massa id justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet mollis tortor congue.
-              Sed quis mauris sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada in, tristique
-              at erat lorem ipsum dolor sit amet lorem ipsum sed consequat consequat magna tempus lorem ipsum consequat
-              Phasellus laoreet massa id in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-              magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros consequat magna tempus lorem ipsum
-              consequat Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit
-              amet mollis tortor congue. Sed quis mauris sit amet magna accumsan.
-            </p>
-          </article>
+          </nav>
+        </div>
+      </section>
+    </div>
+
+    <!-- Banner -->
+    <section id="banner">
+      <div class="container">
+        <p>A PLACE TO RECORD MY THOUGHTS</p>
+      </div>
+    </section>
+    <!-- Features -->
+    <section id="features">
+      <div class="container">
+        <div class="row aln-center">
+          <div class="col-4 col-6-medium col-12-small">
+            <!-- Feature -->
+            <section>
+              <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+              <header>
+                <h3>About Us</h3>
+              </header>
+              <p>
+                This is website was created out the personal need for a convenient and readily accesible place to
+                journal. Carrying a notebook around just didn't seem convenient for me.
+                <strong>I think I am just lazy</strong>
+                .
+              </p>
+            </section>
+          </div>
+          <div class="col-4 col-6-medium col-12-small">
+            <!-- Feature -->
+            <section>
+              <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+              <header>
+                <h3>Benefits of Journaling</h3>
+              </header>
+              <p>
+                According to reasearch, journaling can helo you achieve goal, track prograess and growth, gain
+                self-confidence, improve writing and comunication skills, reduce stress and anxiety, find inspiration
+                and strengthen memory. You can read more about it
+                <a
+                  href="https://healthy.kaiserpermanente.org/health-wellness/healtharticle.7-benefits-of-keeping-a-journal"
+                >
+                  here
+                </a>
+                .
+              </p>
+            </section>
+          </div>
+          <div class="col-4 col-6-medium col-12-small">
+            <!-- Feature -->
+            <section>
+              <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+              <header>
+                <h3>Give it a try!</h3>
+              </header>
+              <p>It is simple to navigate and you can have as many journals as you would like.</p>
+            </section>
+          </div>
+          <div class="col-12">
+            <ul class="actions">
+              <li><a href="#" class="button icon solid fa-file">Tell Me More</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
