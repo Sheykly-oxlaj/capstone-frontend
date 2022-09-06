@@ -18,6 +18,30 @@
     <router-link to="/journal-entries/:id">Entry</router-link> -->
   <!-- displayed in journalsIndex/JournalsShow/ -->
   <!-- </nav> -->
+  <section id="header">
+    <div class="container">
+      <!-- Logo -->
+      <h1 id="logo">
+        <router-link to="/login">FOR ME | BY ME</router-link>
+      </h1>
+      <p>A PLACE TO RECORD MY THOUGHTS</p>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <h1></h1>
+
+        <p>
+          <a href="/">Home</a>
+          |
+          <a href="/login">Login</a>
+          |
+          <a href="/logout">Logout</a>
+          |
+          <a href="/journals">All my Journals</a>
+        </p>
+      </nav>
+    </div>
+  </section>
 
   <router-view />
 </template>
