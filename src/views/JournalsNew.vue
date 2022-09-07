@@ -36,6 +36,10 @@ export default {
         Name:
         <input type="text" v-model="newJournalParams.name" />
       </div>
+      <div>
+        Description:
+        <input type="text" v-model="newJournalParams.description" />
+      </div>
       <input type="submit" value="Create" />
     </form>
   </div>
