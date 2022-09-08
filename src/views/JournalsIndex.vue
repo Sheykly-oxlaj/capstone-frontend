@@ -3,7 +3,7 @@ import axios from "axios";
 export default {
   data: function () {
     return {
-      message: "All Journals!",
+      message: "                ",
       journals: [],
     };
   },
@@ -54,43 +54,31 @@ export default {
         <div class="container">
           <div class="row">
             <!-- Sidebar -->
+            <div>{{ message }}</div>
             <div id="sidebar" class="col-4 col-12-medium">
               <!-- Highlights -->
               <section>
                 <ul class="divided">
                   <li>
                     <!-- Highlight -->
-                    <article class="box highlight">
+                    <article class="box highlight" v-for="journal in journals" v-bind:key="journal.id">
                       <header>
-                        <h3><a href="#">Something of note</a></h3>
+                        <h3>
+                          <router-link :to="`/journals/${journal.id}`">
+                            <h2>{{ journal.name }}</h2>
+                          </router-link>
+                        </h3>
                       </header>
-                      <a href="#" class="image left"><img src="images/pic06.jpg" alt="" /></a>
+
                       <p>
-                        Phasellus sed laoreet massa id justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit
-                        amet mollis tortor congue magna lorem ipsum dolor et quisque ut odio facilisis convallis. Etiam
-                        non nunc vel est suscipit convallis non id orci. Ut interdum tempus facilisis convallis. Etiam
-                        non nunc vel est suscipit convallis non id orci.
+                        {{ journal.description }}
                       </p>
                       <ul class="actions">
-                        <li><a href="#" class="button icon solid fa-file">Learn More</a></li>
-                      </ul>
-                    </article>
-                  </li>
-                  <li>
-                    <!-- Highlight -->
-                    <article class="box highlight">
-                      <header>
-                        <h3><a href="#">Something of less note</a></h3>
-                      </header>
-                      <a href="#" class="image left"><img src="images/pic07.jpg" alt="" /></a>
-                      <p>
-                        Phasellus sed laoreet massa id justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit
-                        amet mollis tortor congue magna lorem ipsum dolor et quisque ut odio facilisis convallis. Etiam
-                        non nunc vel est suscipit convallis non id orci. Ut interdum tempus facilisis convallis. Etiam
-                        non nunc vel est suscipit convallis non id orci.
-                      </p>
-                      <ul class="actions">
-                        <li><a href="#" class="button icon solid fa-file">Learn More</a></li>
+                        <li>
+                          <router-link :to="`/journals/${journal.id}`" class="button icon solid fa-file">
+                            Take a look
+                          </router-link>
+                        </li>
                       </ul>
                     </article>
                   </li>
@@ -102,7 +90,7 @@ export default {
       </section>
     </div>
 
-    <div class="journals">
+    <!-- <div class="journals">
       <h1>{{ message }}</h1>
       <div v-for="journal in journals" v-bind:key="journal.id">
         <router-link :to="`/journals/${journal.id}`">
@@ -110,9 +98,18 @@ export default {
         </router-link>
         <p>{{ journal.description }}</p>
       </div>
-      <!-- <router-link v-bind:to="`/journals/new`">New Journal</router-link> -->
-      <button @click="$router.push('/journals/new')">New Journal</button>
-    </div>
+       <router-link v-bind:to="`/journals/new`">New Journal</router-link> -->
+    <!-- > -->
+
+    <section id="footer">
+      <ul class="links">
+        <li>&copy; Untitled. All rights reserved.</li>
+        <li>
+          Design:
+          <a href="http://html5up.net">HTML5 UP</a>
+        </li>
+      </ul>
+    </section>
   </body>
 </template>
 
