@@ -3,8 +3,9 @@ import axios from "axios";
 export default {
   data: function () {
     return {
-      message: "                ",
+      message: "My Journals!",
       journals: [],
+      journal: {},
     };
   },
   created: function () {
@@ -15,6 +16,11 @@ export default {
       axios.get("/journals").then((response) => {
         console.log("journals index", response);
         this.journals = response.data;
+      });
+    },
+    showJournal: function () {
+      axios.get("/journals/" + this.$route.params.id + ".json").then((response) => {
+        this.journal = response.data;
       });
     },
   },
@@ -49,14 +55,14 @@ export default {
           </nav>
         </div>
       </section>
-
+      <!-- Main -->
       <section id="main">
         <div class="container">
           <div class="row">
             <!-- Sidebar -->
-            <div>{{ message }}</div>
             <div id="sidebar" class="col-4 col-12-medium">
               <!-- Highlights -->
+              <h1>{{ message }}</h1>
               <section>
                 <ul class="divided">
                   <li>
@@ -76,10 +82,11 @@ export default {
                       <ul class="actions">
                         <li>
                           <router-link :to="`/journals/${journal.id}`" class="button icon solid fa-file">
-                            Take a look
+                            Take a look inside?
                           </router-link>
                         </li>
                       </ul>
+                      <div>________________</div>
                     </article>
                   </li>
                 </ul>
@@ -88,9 +95,8 @@ export default {
           </div>
         </div>
       </section>
-    </div>
 
-    <!-- <div class="journals">
+      <!-- <div class="journals">
       <h1>{{ message }}</h1>
       <div v-for="journal in journals" v-bind:key="journal.id">
         <router-link :to="`/journals/${journal.id}`">
@@ -99,17 +105,18 @@ export default {
         <p>{{ journal.description }}</p>
       </div>
        <router-link v-bind:to="`/journals/new`">New Journal</router-link> -->
-    <!-- > -->
-
-    <section id="footer">
-      <ul class="links">
-        <li>&copy; Untitled. All rights reserved.</li>
-        <li>
-          Design:
-          <a href="http://html5up.net">HTML5 UP</a>
-        </li>
-      </ul>
-    </section>
+      <!-- > -->
+      <!-- Footer -->
+      <section id="footer">
+        <ul class="links">
+          <li>&copy; Untitled. All rights reserved.</li>
+          <li>
+            Design:
+            <a href="http://html5up.net">HTML5 UP</a>
+          </li>
+        </ul>
+      </section>
+    </div>
   </body>
 </template>
 
