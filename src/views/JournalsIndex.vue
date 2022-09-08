@@ -28,7 +28,7 @@ export default {
 </script>
 
 <template>
-  <body class="left-sidebar is-preload">
+  <body class="no-sidebar is-preload">
     <div id="page-wrapper">
       <!-- Header -->
       <section id="header">
@@ -60,14 +60,14 @@ export default {
         <div class="container">
           <div class="row">
             <!-- Sidebar -->
-            <div id="sidebar" class="col-4 col-12-medium">
+            <div id="sidebar" class="col-4 col-12-medium" v-for="journal in journals" v-bind:key="journal.id">
               <!-- Highlights -->
-              <h1>{{ message }}</h1>
+
               <section>
                 <ul class="divided">
                   <li>
                     <!-- Highlight -->
-                    <article class="box highlight" v-for="journal in journals" v-bind:key="journal.id">
+                    <article class="box highlight">
                       <header>
                         <h3>
                           <router-link :to="`/journals/${journal.id}`">
