@@ -96,6 +96,7 @@ export default {
       </section>
 
       <!-- Footer -->
+
       <section id="footer">
         <ul class="links">
           <li>&copy; Untitled. All rights reserved.</li>
