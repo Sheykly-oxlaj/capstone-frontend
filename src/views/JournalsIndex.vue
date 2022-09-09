@@ -105,7 +105,7 @@ export default {
         </router-link>
         <p>{{ journal.description }}</p>
       </div>
-    <router-link v-bind:to="`/journals/new`">New Journal</router-link>
+   
     
      Footer -->
 
