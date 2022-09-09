@@ -55,23 +55,37 @@ export default {
         </nav>
       </div>
     </section>
-  </div>
-
-  <div class="login">
-    <form v-on:submit.prevent="submit()">
-      <h1>Login</h1>
-      <ul>
-        <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
+    <section id="main">
+      <div class="container">
+        <div id="content">
+          <div class="login">
+            <form v-on:submit.prevent="submit()">
+              <ul>
+                <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
+              </ul>
+              <div>
+                <label>Email:</label>
+                <input type="email" v-model="newSessionParams.email" />
+              </div>
+              <div>
+                <label>Password:</label>
+                <input type="password" v-model="newSessionParams.password" />
+              </div>
+              <br />
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <ul class="links">
+        <li>&copy; Untitled. All rights reserved.</li>
+        <li>
+          Design:
+          <a href="http://html5up.net">HTML5 UP</a>
+        </li>
       </ul>
-      <div>
-        <label>Email:</label>
-        <input type="email" v-model="newSessionParams.email" />
-      </div>
-      <div>
-        <label>Password:</label>
-        <input type="password" v-model="newSessionParams.password" />
-      </div>
-      <input type="submit" value="Submit" />
-    </form>
+    </section>
   </div>
 </template>

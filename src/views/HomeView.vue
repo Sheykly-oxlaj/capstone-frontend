@@ -95,7 +95,7 @@
           </div>
           <div class="col-12">
             <ul class="actions">
-              <li><a href="/login" class="button icon solid fa-file">Get Started</a></li>
+              <li><a href="/signup" class="button icon solid fa-file">SignUp Here!</a></li>
             </ul>
           </div>
         </div>
