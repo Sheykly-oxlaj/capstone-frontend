@@ -93,6 +93,7 @@ export default {
               </section>
             </div>
           </div>
+          <router-link v-bind:to="`/journals/new`" class="button icon solid fa-file">New Journal</router-link>
         </div>
       </section>
 
@@ -104,9 +105,10 @@ export default {
         </router-link>
         <p>{{ journal.description }}</p>
       </div>
-       <router-link v-bind:to="`/journals/new`">New Journal</router-link> -->
-      <!-- > -->
-      <!-- Footer -->
+    <router-link v-bind:to="`/journals/new`">New Journal</router-link>
+    
+     Footer -->
+
       <section id="footer">
         <ul class="links">
           <li>&copy; Untitled. All rights reserved.</li>
