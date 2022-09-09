@@ -80,7 +80,7 @@ export default {
     </section>
     <section id="footer">
       <ul class="links">
-        <li>&copy; Untitled. All rights reserved.</li>
+        <li>&copy; ForMebyMe. All rights reserved.</li>
         <li>
           Design:
           <a href="http://html5up.net">HTML5 UP</a>
